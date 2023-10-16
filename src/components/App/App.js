@@ -10,15 +10,12 @@ const App = () => {
   const [sortId, setSortId] = React.useState('newest');
 
   return (
-    <>
+    <ThemeProvider theme={theme}>
       <Header />
-      <ThemeProvider theme={theme}>
-        <Main>
-          <ShoeIndex sortId={sortId} setSortId={setSortId} />
-        </Main>
-      </ThemeProvider>
-
-    </>
+      <Main>
+        <ShoeIndex sortId={sortId} setSortId={setSortId} />
+      </Main>
+    </ThemeProvider>
   );
 };
 
@@ -29,10 +26,10 @@ const Main = styled.main`
     background-color: yellow;
   }
   @media ${props => props.theme.QUERIES.tabletAndSmaller} {
-    background-color: yellow;
+    background-color: lightblue;
   }
   @media ${props => props.theme.QUERIES.laptopAndSmaller} {
-    background-color: yellow;
+    background-color: pink;
   }
 `;
 
