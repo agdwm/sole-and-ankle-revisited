@@ -22,16 +22,11 @@ const App = () => {
 const Main = styled.main`
   padding: 64px 32px;
 
-
-  @media ${props => props.theme.QUERIES.laptopAndSmaller} {
-    background-color: pink;
-  }
   @media ${props => props.theme.QUERIES.tabletAndSmaller} {
-    background-color: lightblue;
     padding: 48px 32px;
   }
+
   @media ${props => props.theme.QUERIES.phoneAndSmaller} {
-    background-color: yellow;
     padding: 48px 16px;
   }
 `
