@@ -39,7 +39,7 @@ const MobileMenu = ({ isOpen, onDismiss }) => {
 const Overlay = styled(DialogOverlay)`
   position: fixed;
   inset: 0;
-  background-color: ${props => props.theme.COLORS.overlay};
+  background-color: var(--color-overlay);
   display: flex;
   justify-content: flex-end;
 `
@@ -67,14 +67,14 @@ const Nav = styled.nav`
 `
 
 const NavLink = styled.a`
-  color: ${props => props.theme.COLORS.gray[900]};
+  color: var(--color-gray-900);
   font-weight: ${props => props.theme.WEIGHTS.medium};
   text-decoration: none;
   font-size: 1.125rem;
   text-transform: uppercase;
 
   &:first-of-type {
-    color: ${props => props.theme.COLORS.secondary};
+    color: var(--color-secondary);
   }
 `
 
